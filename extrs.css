@@ -1,0 +1,28 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Set body/html height to 100vh for full-screen */
+}
+
+.hero {
+  height: 100vh; /* Extend hero section to full height */
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.hero-text {
+  position: absolute; /* Position text absolutely over image */
+  top: 50%;
+  left: 50%; /* Center text horizontally and vertically */
+  transform: translate(-50%, -50%); /* Account for offset due to absolute positioning */
+  color: white; /* Ensure good contrast against dark image */
+  z-index: 1; /* Ensure text displays above image */
+}
+
+.hero-image {
+  background-image: url(/images/Hero-img.png);
+  background-size: cover; /* Ensure image covers entire section */
+  background-position: center; /* Center image within section */
+  height: 100%; /* Set full height for image */
+  width: 100%; /* Set full width for image */
+}
