@@ -1,19 +1,16 @@
+
 section{
-    height: 1250px;
+    background-color: #FFFFFF;
+    height: 768px;
     width: 100%;
 }
 h3 {
-    font-weight: bold;
     align-items: center;
+    background-color: whitesmoke;
+    color: #353535;
     display: flex;
     justify-content: center;
 }
-
-.services-title{
-    justify-content: center;
-    max-width: 100%;
-}
 @media (max-width:768px) {
-   
-    
+
 }
