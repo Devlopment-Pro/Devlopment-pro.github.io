@@ -1,3 +1,42 @@
+.hero {
+     min-height: 100vh; /*Set minimum height to 100vh for responsiveness */
+    background-image: url("/images/Hero-img.png"); /* Set background image */
+    background-size:cover; /* Resize image to cover container */
+    background-position: center; /* Center image horizontally and vertically */
+    display:flex; /* Enable vertical stacking of text and image */
+    align-items:center; /* Vertically center content */
+    justify-content:center; /* Horizontally center content */
+    text-align:center; /* Center text within hero section */
+  }
+  
+  .hero-text {
+    color: white; /* Set text color to white */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a slight shadow for readability */
+    z-index: 1; /* Set z-index to make sure text is on top of the image */
+  }
+
+  
+ 
+  
+  @media (min-width: 768px) {
+    .hero-text {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .hero-text {
+      font-size: 1rem; /* Adjust font size for even smaller screens */
+    }
+  }
+  
+.navbar {
+
+    opacity: 0.9;
+}
+
+
+/* dbb */
 
 section{
     background-color: #FFFFFF;
