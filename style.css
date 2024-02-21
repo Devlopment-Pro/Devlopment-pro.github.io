@@ -1,55 +1,92 @@
-.hero {
-     min-height: 100vh; /*Set minimum height to 100vh for responsiveness */
-    background-image: url("/images/Hero-img.png"); /* Set background image */
-    background-size:cover; /* Resize image to cover container */
-    background-position: center; /* Center image horizontally and vertically */
-    display:flex; /* Enable vertical stacking of text and image */
-    align-items:center; /* Vertically center content */
-    justify-content:center; /* Horizontally center content */
-    text-align:center; /* Center text within hero section */
-  }
-  
-  .hero-text {
-    color: white; /* Set text color to white */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a slight shadow for readability */
-    z-index: 1; /* Set z-index to make sure text is on top of the image */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,500&display=swap');
 
-  
- 
-  
-  @media (min-width: 768px) {
-    .hero-text {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  @media (min-width: 576px) {
-    .hero-text {
-      font-size: 1rem; /* Adjust font size for even smaller screens */
-    }
-  }
-  
-.navbar {
-
-    opacity: 0.9;
-}
-
-
-/* dbb */
-
-section{
+.services {
     background-color: #FFFFFF;
-    height: 768px;
+    height: 100vh;
     width: 100%;
 }
-h3 {
+
+.packages {
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+}
+
+.packages-title {
     align-items: center;
-    background-color: whitesmoke;
-    color: #353535;
+    background-color: #1777A1;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
 }
+
+div .p-card-header {
+    background-color: #62A2C4;
+    font-size: 20px;
+}
+
+.price-container {
+    height: 80px;
+    width: 322.5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-container-mobile {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price .currency {
+    position: relative;
+    color: #505050;
+    font-size: 25px;
+}
+
+.price .integer-part {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.price-without-decimal {
+    font-size: 12px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.carousel-control-prev-icon {
+    /* background-image: url("Images/arrow-left.png"); */
+    border: solid black 0;
+    background-color: gray;
+    border-radius: 20px;
+}
+.carousel-control-next-icon
+{
+    border: solid black 0;
+    background-color: gray;
+    border-radius: 20px;
+}
+
 @media (max-width:768px) {
+    .services {
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .packages {
+        background-color: #FFFFFF;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .price-container {
+        height: 70px;
+    }
+
 
 }
